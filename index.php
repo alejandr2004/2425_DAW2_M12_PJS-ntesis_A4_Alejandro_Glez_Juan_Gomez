@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensaje interceptado</title>
+    <link type="text/css" href="./style.css">
 </head>
 <body>
     <form method="get" action="./resultado.php" id="encripto">
