@@ -1,0 +1,32 @@
+body{
+    background-image:url(./form.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+}
+h1{
+    text-align: center;
+    color: darkcyan;
+}
+h3{
+    text-align: center;
+    color: darkcyan;
+}
+#contenedor{
+    display: grid;
+    margin-top: 14%;
+    color: darkcyan;
+}
+#formulario{
+    align-items: center;
+    padding: 3%;
+    align-self: center;
+    justify-self: center;
+    color: darkcyan;
+}
+#fondo{
+    background-image:url(./carta.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+}

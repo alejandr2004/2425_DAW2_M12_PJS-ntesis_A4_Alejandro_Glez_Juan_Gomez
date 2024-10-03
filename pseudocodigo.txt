@@ -1,0 +1,52 @@
+Creación de "index.php" 
+
+Formulario
+   Input "cifrado" en el que el usuario escribirá código cifrado
+
+Creación de "resultado.php"
+
+SI cifrado (recogido mediante POST) tiene valor (isset)
+
+Función transformarTexto que recibirá un parámetro ("$texto" como variable en la definicion)   
+   Creación variable resultado con valor nulo
+   Creación variable longitud que recogerá la longitud de $texto
+   Creación variable inicio con valor nulo
+   Creación variable final con valor nulo
+   Mediante FOR mientras que "i" sea menor a la variable $longitud:
+      SI es par (el resto de la división de i entre 2 sea 0):
+         Asignar a la variable $inicio la concatenación de la posición actual de $texto
+      ELSE:
+
+         Asignar a la variable $final la concatenación de la posición actual
+   FIN DEL FOR
+
+   Asignar a $resultado la variable $inicio concatenada con la variable $final invertida (strrev)
+   RETURN de $resultado
+FIN DE LA FUNCIÓN
+
+Función deshacerTransformacion que recibirá un parámetro ("$texto" como variable en la definicion)
+   Creación variable vocales con valor "aeiouAEIOU"
+   Creación variable resultado con valor nulo
+   Creación variable secuencia con valor nulo
+   Mediante FOR mientras que "i" sea menor a la longitud de $texto
+      Creación variable caracter que almacena la posición actual de texto (la posición la determina la iteración de $i)
+      SI ^ la posición de $caracter coincide con el valor de $vocales(aeiouAEIOU):
+         SI ^^ $secuencia es diferente a [('')=> valor nulo]:
+            Asignar a $resultado el valor de $secuencia invertido
+            Asignar a $secuencia valor nulo
+         FIN SI ^^
+         Asignar a $resultado la concatenación de $caracter
+      ELSE ^^ 
+         Asignar a $secuencia el valor de $caracter
+   FIN del FOR
+   SI $secuencia tiene un valor:
+      Asignar a $resultado la concatenación de $secuencia invertida
+   FIN SI
+   RETURN de $resultado
+FIN DE LA FUNCIÓN
+Creación variable $descoficaX1 igualada a la función "transformarTexto" con el parámetro $cifrado
+Creación variable $descifrado igualada a la función deshacerTransformacion con el parámetro $descoficaX1
+Mensaje "Descodificación de x2 a x1: $descoficaX1"
+Mensaje "Descodificación de x1 a x: $descifrado"
+Botón para regresar a "index.php"
+FIN SI
