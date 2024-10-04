@@ -22,8 +22,9 @@
         <div id="centrar">
             <h2>Descifado X'' a X'</h2>
             <p><?php echo $cifrado; ?> => <?php echo $descoficaX1; ?></p>
-            <form action="./index.php" method="POST">
-                <input type="submit" class="btn btn-info" value="Volver">
+            <form action="./descifrado_final.php" method="GET">
+                <input type="text" name="transformacion" id="transformacion" value="<?php echo $descoficaX1 ?>">
+                <input type="submit" class="btn btn-info" value="Enviar">
             </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

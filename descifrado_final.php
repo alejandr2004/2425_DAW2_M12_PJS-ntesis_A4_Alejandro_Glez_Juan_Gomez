@@ -1,6 +1,6 @@
 <?php
-    if(isset($_GET['cifrado'])){
-        $cifrado = $_GET['cifrado'];
+    if(isset($_GET['transformacion'])){
+        $cifrado = $_GET['transformacion'];
 
         require_once './funciones.php';
         $descoficaX1 = deshacerTransformacion($cifrado);

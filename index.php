@@ -18,7 +18,6 @@
                 <input type="text" name="cifrado" id="cifrado" required><br><br>
                 <input type="submit" name="descifrarR1" class="btn btn-outline-success" value="X'' - X'">
                 <input type="submit" name="descifrarR2" class="btn btn-outline-success" value="X'' - X">
-                <input type="submit" name="descifrarR3" class="btn btn-outline-success" value="X' - X">
             </form>
             <form>
             </form>
@@ -35,13 +34,7 @@ if (filter_has_var(INPUT_POST, 'descifrarR1')) {
     $cifrado = $_POST['cifrado']; 
     header("Location: resultado2.php?cifrado=$cifrado");
     exit();
-} else if (filter_has_var(INPUT_POST, 'descifrarR3')) {
-    $cifrado = $_POST['cifrado']; 
-    header("Location: descifrado_final.php?cifrado=$cifrado");
-    exit();
 }
-
-
 
 ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
