@@ -1,13 +1,11 @@
 <?php
     if(isset($_GET['cifrado'])){
         $cifrado = $_GET['cifrado'];
-
-        require_once './funciones.php';
+        require_once "./funciones.php";
         $descoficaX1 = transformarTexto($cifrado);
-        
+        $descifrado = deshacerTransformacion($descoficaX1);
         
     }
-
     ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -20,8 +18,8 @@
     </head>
     <body>
         <div id="centrar">
-            <h2>Descifado X'' a X'</h2>
-            <p><?php echo $cifrado; ?> => <?php echo $descoficaX1; ?></p>
+            <h2>Descifado X'' a X</h2>
+            <p><?php echo $cifrado; ?> => <?php echo $descifrado; ?></p>
             <form action="./index.php" method="POST">
                 <input type="submit" class="btn btn-info" value="Volver">
             </form>

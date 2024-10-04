@@ -24,9 +24,3 @@ h3{
     justify-self: center;
     color: darkcyan;
 }
-#fondo{
-    background-image:url(./carta.jpg);
-    background-attachment: fixed;
-    background-size:cover;
-    background-position: center;
-}

@@ -3,11 +3,9 @@
         $cifrado = $_GET['cifrado'];
 
         require_once './funciones.php';
-        $descoficaX1 = transformarTexto($cifrado);
-        
+        $descoficaX1 = deshacerTransformacion($cifrado);
         
     }
-
     ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -20,10 +18,10 @@
     </head>
     <body>
         <div id="centrar">
-            <h2>Descifado X'' a X'</h2>
+            <h2>Descifado X' a X</h2>
             <p><?php echo $cifrado; ?> => <?php echo $descoficaX1; ?></p>
             <form action="./index.php" method="POST">
-                <input type="submit" class="btn btn-info" value="Volver">
+                <input type="submit" class="btn btn-info" value="volver">
             </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
