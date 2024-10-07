@@ -1,5 +1,4 @@
 <?php
-
     function transformarTexto($texto) {
             $resultado = ''; 
             $longitud = strlen($texto); // Obtiene la longitud del texto

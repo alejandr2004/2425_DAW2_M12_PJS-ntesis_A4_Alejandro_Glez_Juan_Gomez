@@ -1,6 +1,6 @@
 body{
     display: grid;
-    background-image:url(./carta.jpg);
+    background-image:url(../img/carta.jpg);
     background-attachment: fixed;
     background-size:cover;
     background-position:center;
